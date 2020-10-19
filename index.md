@@ -7,3 +7,5 @@ Prior to this I was at Carnegie Mellon University for a year long research inter
 A consolidated list of my research publications is on [Google Scholar](https://scholar.google.com/citations?user=RGiCLUgAAAAJ&hl=fr). 
 
 Besides research, I enjoy photography, dancing and cooking (also, eating).
+
+<font size="3">[Accessibility](https://accessibility.mit.edu/)</font>
