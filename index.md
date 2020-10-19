@@ -8,4 +8,4 @@ A consolidated list of my research publications is on [Google Scholar](https://s
 
 Besides research, I enjoy photography, dancing and cooking (also, eating).
 
-<font size="3">[Accessibility](https://accessibility.mit.edu/)</font>
+[Accessibility](https://accessibility.mit.edu/)
