@@ -130,6 +130,12 @@ p {
 	color: #1772d0;
 }
 
+.tagline,
+.tagline .pinpoint {
+	color: #800000;
+	font-size: 0.85em;
+}
+
 
 .text-button {
 	display: inline-block;
