@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>The Science of Deep Learning | NYU CSCI-GA.3033-134</title>
+	<meta charset="UTF-8">
+	<script src="/main.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+		content="CSCI-GA.3033-134: The Science of Deep Learning. An empirical course at NYU Courant on why large language models generalize the way they do. Fall 2026.">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta name="author" content="Pratyusha Sharma">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/main.css">
+	<link rel="icon" type="image/ico" href="/assets/favicon.ico">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<div class="w3-top">
+		<div class="w3-bar" id="myNavbar">
+			<a href="/teaching/" class="w3-bar-item navbar-item w3-hover-opacity">TEACHING</a>
+			<a href="/#home" class="w3-bar-item navbar-item w3-hover-opacity">HOME</a>
+		</div>
+	</div>
+
+	<div class="container course-container">
+
+		<div class="item3 course-header">
+			<h3>The Science of Deep Learning</h3>
+			<p class="course-subtitle">
+				CSCI-GA.3033-134 (5696) &middot; Special Topics &middot; Fall 2026
+				<br>
+				New York University, Courant Institute of Mathematical Sciences
+			</p>
+		</div>
+
+		<div class="course-layout">
+
+			<!-- ============ MAIN COLUMN ============ -->
+			<div class="course-main">
+
+				<h4 id="about">Course description</h4>
+				<p>
+					Large language models generalize in ways we did not design and fail in ways we did not anticipate.
+					This course is about understanding why.
+				</p>
+				<p>
+					This course will take an empirical approach to unpacking this question: building language models
+					from scratch to develop hands-on fluency, then using that fluency to ask scientific questions about
+					generalization. What does compute-optimal training actually mean? What do data quality, repetition,
+					and domain diversity do to what a model learns? When and why does chain-of-thought help? And more.
+				</p>
+				<p>
+					Students will learn to build transformers from scratch, fit scaling laws, build data pipelines, and
+					run fine-tuning experiments---not as engineering exercises, but as instruments for forming and
+					testing hypotheses. By the end, students will be equipped to read the frontier literature
+					critically, design experiments, and pursue research questions in one of the most consequential but
+					incompletely understood areas of science.
+				</p>
+
+				<h4 id="prerequisites">Prerequisites</h4>
+				<p>
+					Machine learning, linear algebra, probability, and proficiency in Python and PyTorch.
+				</p>
+
+				<h4 id="logistics-inline">Logistics</h4>
+				<p>
+					<b>Lectures:</b> Mondays, 2:45&ndash;4:45pm
+					<br>
+					<b>Instructor:</b> <a id="link" class="w3-hover-opacity" href="/">Pratyusha Sharma</a>
+					<br>
+					<b>Contact:</b> <a id="link" class="w3-hover-opacity"
+						href="mailto:p.sharma@nyu.edu">p.sharma@nyu.edu</a>
+				</p>
+
+				<h4 id="schedule">Schedule</h4>
+				<p class="note-small">Schedule is tentative and will be updated as the semester progresses.</p>
+
+				<table class="schedule-table">
+					<thead>
+						<tr>
+							<th class="col-num">#</th>
+							<th class="col-date">Date</th>
+							<th>Topic</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Sept 14</td>
+							<td><b>Framing the Course.</b> LLMs as scientific objects; generalization as the organizing
+								question.</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Sept 21</td>
+							<td><b>Architecture I.</b> The transformer from scratch &mdash; attention, residuals, layer
+								norm; inductive biases and what they imply for generalization.</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Sept 28</td>
+							<td><b>Architecture II.</b> Hyperparameter choices and ablations; depth vs. width; attention
+								alternatives and mixtures of experts.</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Oct 5</td>
+							<td><b>Optimization &amp; Training Dynamics.</b> Adam, SGD, Muon; learning rate schedules;
+								batch size effects; grokking, double descent, the Edge of Stability.</td>
+						</tr>
+						<tr class="break-row">
+							<td>&mdash;</td>
+							<td>Oct 12</td>
+							<td><em>Fall Break &mdash; no class</em></td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>Oct 14<span class="note-small"> (Legislative Monday)</span></td>
+							<td><b>Generalization Theory.</b> Classical bias&ndash;variance vs. the modern regime; benign
+								overfitting; what networks memorize vs. generalize.</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>Oct 19</td>
+							<td><b>Scaling Laws.</b> Kaplan vs. Chinchilla; compute-optimal training; when scaling loss
+								translates into capabilities &mdash; and when it does not.</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>Oct 26</td>
+							<td><b>Data I.</b> From raw data to a pre-training corpus; filtering, deduplication, quality
+								signals; data quantity vs. quality.</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>Nov 2</td>
+							<td><b>Data II.</b> Repetition and memorization; domain diversity and mixing; synthetic data
+								and its generalization limits.</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>Nov 9</td>
+							<td><b>Geometry &amp; Representations.</b> Invariances and symmetries; the linear
+								representation hypothesis; probing as an empirical tool.</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>Nov 16</td>
+							<td><b>In-Context Learning &amp; Prompting.</b> ICL as generalization from context; what the
+								prompt contributes; chain-of-thought empirically; prompt sensitivity as a failure mode.
+							</td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>Nov 23</td>
+							<td><b>Emergent Capabilities.</b> Emergence as a generalization phenomenon; the metric
+								problem; smooth vs. sharp transitions; compositional generalization failures.</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>Nov 30</td>
+							<td><b>Alignment &amp; Fine-Tuning.</b> SFT and what changes in the weights; RLHF and RL for
+								reasoning; shortcut learning and sycophancy; the superficial alignment hypothesis.</td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>Dec 7</td>
+							<td><b>Evaluation.</b> Benchmark contamination; designing evaluations that measure
+								generalization; LLM-as-judge; the moving target problem.</td>
+						</tr>
+						<tr>
+							<td>14</td>
+							<td>Dec 14</td>
+							<td><b>Project Presentations &amp; Open Problems.</b> What we still do not understand;
+								student project presentations; frontiers.</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+
+			<!-- ============ SIDEBAR ============ -->
+			<div class="course-sidebar">
+
+				<div class="sidebar-box">
+					<div class="sidebar-title">Dates and Deadlines</div>
+					<ul class="sidebar-list deadline-list">
+						<li>
+							<span class="deadline-date">Sept 14 @ 5pm</span>
+							<span class="deadline-item">HW1 released</span>
+						</li>
+						<li>
+							<span class="deadline-date">Sept 28 @ 5pm</span>
+							<span class="deadline-item">HW1 due</span>
+							<span class="deadline-item">HW2 released</span>
+						</li>
+						<li>
+							<span class="deadline-date">Oct 14 @ 5pm</span>
+							<span class="deadline-item">HW2 due</span>
+						</li>
+						<li>
+							<span class="deadline-date">Oct 26 @ 5pm</span>
+							<span class="deadline-item">Project proposal due</span>
+						</li>
+						<li>
+							<span class="deadline-date">Nov 16 @ 5pm</span>
+							<span class="deadline-item">Project mid-point check-in due</span>
+						</li>
+						<li>
+							<span class="deadline-date">Dec 14 and 15</span>
+							<span class="deadline-item">Final project presentations</span>
+						</li>
+						<li>
+							<span class="deadline-date">Dec 15 @ 5pm</span>
+							<span class="deadline-item">Project reports due</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="sidebar-box">
+					<div class="sidebar-title">Grading</div>
+					<ul class="sidebar-list grade-list">
+						<li>
+							<span class="grade-item">Assignments</span>
+							<span class="grade-pct">25%</span>
+						</li>
+						<li>
+							<span class="grade-item">In-class quizzes
+								<span class="note-small">(best 10 of 14)</span></span>
+							<span class="grade-pct">35%</span>
+						</li>
+						<li>
+							<span class="grade-item">Project</span>
+							<span class="grade-pct">35%</span>
+						</li>
+						<li>
+							<span class="grade-item">Class participation</span>
+							<span class="grade-pct">5%</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="sidebar-box">
+					<div class="sidebar-title">Logistics</div>
+					<ul class="sidebar-list">
+						<li><b>When</b><br>Mondays 2:45&ndash;4:45pm</li>
+						<li><b>Course number</b><br>CSCI-GA.3033-134 (5696)</li>
+						<li><b>Instructor</b><br><a id="link" class="w3-hover-opacity" href="/">Pratyusha Sharma</a></li>
+						<li><b>Email</b><br><a id="link" class="w3-hover-opacity"
+								href="mailto:p.sharma@nyu.edu">p.sharma@nyu.edu</a></li>
+					</ul>
+				</div>
+
+				<div class="sidebar-box">
+					<div class="sidebar-title">Links</div>
+					<ul class="sidebar-list">
+						<li><a id="link" class="w3-hover-opacity"
+								href="https://brightspace.nyu.edu/d2l/home/628908">Brightspace</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<footer class="w3-padding-64" id="footer">
+		<div class="w3-xlarge w3-section w3-center">
+			<a class="text-button2" href="/teaching/">All courses</a>
+			<a class="text-button2" href="/">Back to home</a>
+		</div>
+	</footer>
+</body>
+
+</html>

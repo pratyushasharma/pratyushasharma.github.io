@@ -133,7 +133,280 @@ p {
 .tagline,
 .tagline .pinpoint {
 	color: #800000;
-	font-size: 0.85em;
+	font-size: 14px;
+	line-height: 1.5;
+	display: inline-block;
+	max-width: 260px;
+	margin-top: 1.2em;
+}
+
+.tagline-label {
+	display: block;
+	font-weight: 700;
+}
+
+.tagline-item {
+	display: block;
+}
+
+
+/* ---------- Teaching / course pages ---------- */
+
+.course-container {
+	max-width: 1100px;
+}
+
+.course-header {
+	padding-bottom: 0;
+}
+
+.course-subtitle {
+	color: #555;
+	font-size: 16px;
+	margin-top: 0.4em;
+}
+
+.course-layout {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 0 2em 2em 2em;
+	box-sizing: border-box;
+	align-items: flex-start;
+}
+
+.course-main {
+	flex: 1 1 560px;
+	min-width: 0;
+	padding-right: 2.5em;
+}
+
+.course-main h4 {
+	margin-top: 1.6em;
+	margin-bottom: 0.4em;
+}
+
+.course-sidebar {
+	flex: 0 0 280px;
+	max-width: 300px;
+	position: sticky;
+	top: 5em;
+}
+
+.sidebar-box {
+	border: 1px solid #e2e2e2;
+	border-radius: 5px;
+	padding: 1em 1.2em;
+	margin-bottom: 1.2em;
+	background-color: #fbfbfb;
+}
+
+.sidebar-title {
+	font-family: 'Nunito';
+	font-weight: 700;
+	font-size: 13px;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	color: #800000;
+	margin-bottom: 0.6em;
+}
+
+.sidebar-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito';
+	font-size: 15px;
+}
+
+.sidebar-list li {
+	padding: 0.4em 0;
+	border-bottom: 1px solid #eee;
+	line-height: 1.45;
+}
+
+.sidebar-list li:last-child {
+	border-bottom: none;
+}
+
+.deadline-list .deadline-date {
+	display: block;
+	font-weight: 700;
+	font-size: 13px;
+	color: #1772d0;
+}
+
+.deadline-list .deadline-item {
+	display: block;
+}
+
+.grade-list li {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: 0.6em;
+}
+
+.grade-list .grade-item {
+	flex: 1 1 auto;
+}
+
+.grade-list .grade-pct {
+	flex: 0 0 auto;
+	font-weight: 700;
+	color: #1772d0;
+}
+
+.schedule-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-family: 'Nunito';
+	font-size: 15px;
+	margin-top: 0.6em;
+}
+
+.schedule-table th {
+	text-align: left;
+	font-size: 12px;
+	letter-spacing: .08rem;
+	text-transform: uppercase;
+	color: #555;
+	border-bottom: 2px solid #ddd;
+	padding: 0.5em 0.6em;
+}
+
+.schedule-table td {
+	vertical-align: top;
+	padding: 0.65em 0.6em;
+	border-bottom: 1px solid #eee;
+	line-height: 1.45;
+}
+
+.schedule-table .col-num {
+	width: 34px;
+}
+
+.schedule-table .col-date {
+	width: 95px;
+	white-space: nowrap;
+}
+
+.schedule-table tbody tr:hover {
+	background-color: #fafafa;
+}
+
+.schedule-table .break-row td {
+	color: #888;
+	background-color: #fafafa;
+}
+
+.note-small {
+	font-size: 13px;
+	color: #888;
+}
+
+.course-entry {
+	padding-bottom: 1.5em;
+}
+
+/* ---------- Lab / people ---------- */
+
+.coming-soon {
+	font-family: 'Nunito';
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: .08rem;
+	text-transform: uppercase;
+	color: #888;
+	border: 1px dashed #ddd;
+	border-radius: 5px;
+	background-color: #fbfbfb;
+	padding: 2.5em 1em;
+	text-align: center;
+	margin-top: 1.5em;
+}
+
+.people-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2.5em;
+	margin-top: 1.5em;
+	margin-bottom: 3em;
+}
+
+#lab h4 {
+	margin-top: 0;
+	margin-bottom: 0.2em;
+	padding-bottom: 0.6em;
+	border-bottom: 1px solid #eee;
+}
+
+#lab h4 ~ h4 {
+	margin-top: 1em;
+}
+
+.person {
+	flex: 0 0 160px;
+	text-align: center;
+}
+
+.person img {
+	width: 160px;
+	height: 160px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.person-name {
+	font-family: 'Nunito';
+	font-weight: 700;
+	font-size: 16px;
+	margin-top: 0.6em;
+}
+
+.person-role {
+	font-family: 'Nunito';
+	font-size: 14px;
+	color: #666;
+}
+
+@media screen and (max-width: 600px) {
+	.person {
+		flex: 0 0 120px;
+	}
+
+	.person img {
+		width: 120px;
+		height: 120px;
+	}
+}
+
+.course-title {
+	font-size: 20px;
+	color: #1772d0;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+	.course-layout {
+		padding: 0 1em 1em 1em;
+	}
+
+	.course-main {
+		flex: 1 1 100%;
+		padding-right: 0;
+	}
+
+	.course-sidebar {
+		flex: 1 1 100%;
+		max-width: 100%;
+		position: static;
+		margin-top: 2em;
+	}
+
+	.schedule-table {
+		font-size: 14px;
+	}
 }
 
 
@@ -343,6 +616,12 @@ p {
 	color:#e8a200;
 	/* font-weight: bold; */
 	font-weight: bold;
+}
+
+.award {
+	color: red;
+	font-weight: 700;
+	font-size: 14px;
 }
 
 .text {
