@@ -91,6 +91,7 @@
 							<th class="col-num">#</th>
 							<th class="col-date">Date</th>
 							<th>Topic</th>
+							<th>Papers</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -103,20 +104,34 @@
 						<tr>
 							<td>2</td>
 							<td>Sept 21</td>
-							<td><b>Architecture I.</b> The transformer from scratch &mdash; attention, residuals, layer
-								norm; inductive biases and what they imply for generalization.</td>
+							<td><b>Optimization.</b> 
+								Guest lecture by <a id="link" class="w3-hover-opacity" href="https://www.microsoft.com/en-us/research/people/jcl/">John Langford</a>. </td>
+							<td>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/abs/1412.6980">Adam.</a>
+								<a id="link" class="w3-hover-opacity" href="https://kellerjordan.github.io/posts/muon/">Muon.</a>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/abs/2504.05295">Dion.</a>
+							</td>
 						</tr>
 						<tr>
 							<td>3</td>
 							<td>Sept 28</td>
-							<td><b>Architecture II.</b> Hyperparameter choices and ablations; depth vs. width; attention
-								alternatives and mixtures of experts.</td>
+							<td><b>Scaling Laws</b></td>
+							<td>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/abs/2001.08361">Kaplan scaling law.</a>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/abs/2203.15556">Hoffman scaling law.</a>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/abs/2305.16264">Data constrained scaling.</a>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/abs/2206.14486">Beating power law scaling [Bonus].</a>
+							</td>
 						</tr>
 						<tr>
 							<td>4</td>
 							<td>Oct 5</td>
-							<td><b>Optimization &amp; Training Dynamics.</b> Adam, SGD, Muon; learning rate schedules;
-								batch size effects; grokking, double descent, the Edge of Stability.</td>
+							<td><b>Training Dynamics.</b></td>
+							<td>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/abs/2201.02177">Grokking.</a>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/pdf/1812.11118">Double descent.</a>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/abs/2103.00065">Edge of stability.</a>
+							</td>
 						</tr>
 						<tr class="break-row">
 							<td>&mdash;</td>
@@ -126,63 +141,95 @@
 						<tr>
 							<td>5</td>
 							<td>Oct 14<span class="note-small"> (Legislative Monday)</span></td>
-							<td><b>Generalization Theory.</b> Classical bias&ndash;variance vs. the modern regime; benign
-								overfitting; what networks memorize vs. generalize.</td>
+							<td><b>Post-Hoc Phenomena.</b></td>
+							<td>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/abs/1803.03635">Lottery ticket hypothesis.</a>
+								<a id="link" class="w3-hover-opacity" href="https://proceedings.neurips.cc/paper_files/paper/2018/file/be3087e74e9100d4bc4c6268cdbe8456-Paper.pdf">Linear mode connectivity.</a>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/pdf/2312.13558">LASER / Better sub networks.</a>
+							</td>
 						</tr>
 						<tr>
 							<td>6</td>
 							<td>Oct 19</td>
-							<td><b>Scaling Laws.</b> Kaplan vs. Chinchilla; compute-optimal training; when scaling loss
-								translates into capabilities &mdash; and when it does not.</td>
+							<td><b>Data.</b> </td>
+							<td>
+								<a id="link" class="w3-hover-opacity" href="https://huggingface.co/spaces/HuggingFaceFW/blogpost-fineweb-v1">Fineweb.</a>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/abs/2602.12237">Data mixing.</a>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/abs/2110.08420">Dataset difficulty.</a>
+							</td>
 						</tr>
 						<tr>
 							<td>7</td>
 							<td>Oct 26</td>
-							<td><b>Data I.</b> From raw data to a pre-training corpus; filtering, deduplication, quality
-								signals; data quantity vs. quality.</td>
+							<td><b>Generalization.</b></td>
+							<td>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/pdf/1902.06720">Lazy vs rich.</a>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/pdf/2206.07682">Emergence.</a>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/pdf/2010.01412">Sharpness aware minimization.</a>
+							</td>
 						</tr>
 						<tr>
 							<td>8</td>
 							<td>Nov 2</td>
-							<td><b>Data II.</b> Repetition and memorization; domain diversity and mixing; synthetic data
-								and its generalization limits.</td>
+							<td><b>In-context learning.</b></td>
+							<td>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/pdf/2205.05055">Influence of data.</a>
+								<a id="link" class="w3-hover-opacity" href="https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html">Induction heads.</a>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/abs/2202.12837">Role of demonstrations.</a>
+							</td>
+
 						</tr>
 						<tr>
 							<td>9</td>
 							<td>Nov 9</td>
-							<td><b>Geometry &amp; Representations.</b> Invariances and symmetries; the linear
-								representation hypothesis; probing as an empirical tool.</td>
+							<td><b>Reasoning.</b></td>
+							<td>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/abs/2201.11903">Chain-of-thought.</a>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/abs/2501.12948">DeepSeek-R1.</a>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/pdf/2509.08755">Agentic RL.</a>
+							</td>
 						</tr>
 						<tr>
 							<td>10</td>
 							<td>Nov 16</td>
-							<td><b>In-Context Learning &amp; Prompting.</b> ICL as generalization from context; what the
-								prompt contributes; chain-of-thought empirically; prompt sensitivity as a failure mode.
+							<td><b>Evaluation.</b></td>
+							<td>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/abs/2211.09110">HELM.</a>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/abs/2304.15004">Emergence mirage?</a>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/abs/2202.03286">Red-teaming.</a>
 							</td>
+
 						</tr>
 						<tr>
 							<td>11</td>
 							<td>Nov 23</td>
-							<td><b>Emergent Capabilities.</b> Emergence as a generalization phenomenon; the metric
-								problem; smooth vs. sharp transitions; compositional generalization failures.</td>
+							<td><b>Reinforcement Learning.</b></td>
+							<td>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/abs/2504.13837">Role of RL beyond SFT?</a>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/pdf/2509.04259">RLxForgetting.</a>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/pdf/2503.20783">Dr.GRPO.</a>
+							</td>
 						</tr>
 						<tr>
 							<td>12</td>
 							<td>Nov 30</td>
-							<td><b>Alignment &amp; Fine-Tuning.</b> SFT and what changes in the weights; RLHF and RL for
-								reasoning; shortcut learning and sycophancy; the superficial alignment hypothesis.</td>
+							<td><b>Alignment</b></td>
+							<td>
+								<a id="link" class="w3-hover-opacity" href="https://arxiv.org/abs/2203.02155">InstructGPT</a>
+								<a id="link" class="w3-hover-opacity" href="https://www.anthropic.com/research/global-workspace">J-Space.</a>
+								<a id="link" class="w3-hover-opacity" href="https://darioamodei.com/post/we-must-pace-the-frontier">Pacing the frontier.</a>
+							</td>
 						</tr>
 						<tr>
 							<td>13</td>
 							<td>Dec 7</td>
-							<td><b>Evaluation.</b> Benchmark contamination; designing evaluations that measure
-								generalization; LLM-as-judge; the moving target problem.</td>
+							<td><b>Probing.</b> Guest lecture by <a id="link" class="w3-hover-opacity" href="https://www.cs.columbia.edu/~johnhew/">John Hewitt</a>. </td>
 						</tr>
 						<tr>
 							<td>14</td>
 							<td>Dec 14</td>
 							<td><b>Project Presentations &amp; Open Problems.</b> What we still do not understand;
-								student project presentations; frontiers.</td>
+								student project presentations.</td>
 						</tr>
 					</tbody>
 				</table>
